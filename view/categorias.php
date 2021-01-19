@@ -18,7 +18,7 @@ if(isset($_SESSION['usuario'])){
 			<div class="row">
 				<div class="col-sm-4">
 					<form id="frmCategorias">
-						<label>Categoria</label>
+						<label>Nome Categoria</label>
 						<input type="text" class="form-control input-sm" name="categoria" id="categoria">
 						<p></p>
 						<span class="btn btn-primary" id="btnAdicionarCategoria">Adicionar</span>
@@ -131,7 +131,7 @@ if(isset($_SESSION['usuario'])){
 
 
 		function eliminaCategoria(idcategoria){
-			alertify.confirm('Deseja excluir esta categoria?', function(){ 
+			alertify.confirm('Atenção!','Deseja excluir esta categoria?', function(){ 
 				$.ajax({
 					type:"POST",
 					data:"idcategoria=" + idcategoria,

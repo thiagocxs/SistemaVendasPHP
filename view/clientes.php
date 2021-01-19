@@ -105,7 +105,7 @@ if(isset($_SESSION['usuario'])){
 		}
 
 		function eliminarCliente(idcliente){
-			alertify.confirm('Deseja Excluir este cliente?', function(){ 
+			alertify.confirm('Atenção!','Deseja Excluir este cliente?', function(){ 
 				$.ajax({
 					type:"POST",
 					data:"idcliente=" + idcliente,
