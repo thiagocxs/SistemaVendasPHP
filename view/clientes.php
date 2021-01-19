@@ -122,7 +122,7 @@ if(isset($_SESSION['usuario'])){
 					}
 				});
 			}, function(){ 
-				alertify.error('Cancelado !')
+				alertify.error('CanceladoS !')
 			});
 		}
 	</script>
